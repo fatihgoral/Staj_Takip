@@ -16,7 +16,7 @@ Bugün stajın ilk gününde, sentetik veri üretim ve eğitim pipeline'ını ku
 ### 1. Proje Dokümantasyonunun Okunması ve Anlaşılması
 
 Staj paketinin tamamını inceledim:
-- **BASLANGIC.md:** 6 haftalık stajın yapısı, paket haritası ve ön koşullar öğrenildi
+- **BASLANGIC:** 6 haftalık stajın yapısı, paket haritası ve ön koşullar öğrenildi
 - **Görev Planı (fatih_gorev_plani.md):** Projenin amacı (iki sistem arası kopuk halkayı kapamak), bilimsel kontrol prensibi (sabit kontrol, tek değişken = eğitim verisi) ve 30 günlük haftalı roadmap anlaşıldı
 - **IDR Level 0–5 Merdiveni:** Sentetik veri üretiminin 6 seviyesi (gerçek veri → klasik augmentasyon → copy-paste → SDXL → ControlNet → BlenderProc 3D) kavrandı
 
