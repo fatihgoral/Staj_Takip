@@ -1,37 +1,76 @@
 # Gün 01 - Günlük Çalışma Raporu
 
 **Tarih:** 3 Ağustos 2026  
-**Konu:** Sentetik Veri Benchmark'ı — Ortam Kurulumu ve Proje Okuması
+**Konu:** Sentetik Veri Benchmark'ı — Ortam Kurulumu ve Onboarding
 
 ---
 
 ## Günün Özeti
 
-Bugün stajın ilk gününde, sentetik veri üretim ve eğitim pipeline'ını kurmaya başladım. AutoLabel Loop (IDR) ve Railway-Anomaly Synthetic Data sistemlerinin lokal bilgisayarda çalışmasını sağladım. Proje yapısını, iki sistem arasındaki bağlantıyı ve 30 günlük görev planını detaylı olarak öğrendim.
+Stajın ilk gününde proje ortamının kurulumu tamamlandı ve geliştirilecek sistemlerin genel mimarisi incelendi. Çalışma sürecinde kullanılacak iki ana proje başarıyla çalıştırılarak geliştirme ortamı hazır hale getirildi. Ayrıca staj boyunca izlenecek iş planı, proje hedefleri ve çalışma metodolojisi detaylı şekilde incelenerek genel proje akışı hakkında bilgi edinildi.
 
 ---
 
-## Yapılan İşler
+## Yapılan Çalışmalar
 
-### 1. Proje Dokümantasyonunun Okunması ve Anlaşılması
+### Proje Dokümantasyonunun İncelenmesi
 
-Staj paketinin tamamını inceledim:
-- **BASLANGIC:** 6 haftalık stajın yapısı, paket haritası ve ön koşullar öğrenildi
-- **Görev Planı:** Projenin amacı (iki sistem arası kopuk halkayı kapamak), bilimsel kontrol prensibi (sabit kontrol, tek değişken = eğitim verisi) ve 30 günlük haftalı roadmap anlaşıldı
-- **IDR Level 0–5 Merdiveni:** Sentetik veri üretiminin 6 seviyesi (gerçek veri → klasik augmentasyon → copy-paste → SDXL → ControlNet → BlenderProc 3D) kavrandı
+Staj kapsamında sağlanan başlangıç dokümanları okunarak proje yapısı analiz edildi.
 
-### 2. Python Ortamı ve Virtual Environment Kurulumu
+- Projenin genel amacı ve çalışma kapsamı öğrenildi.
+- İki farklı sistemin birlikte nasıl çalıştığı incelendi.
+- 30 iş günlük geliştirme planı ve haftalık hedefler değerlendirildi.
+- Sentetik veri üretim sürecinin genel yaklaşımı ve geliştirme aşamaları hakkında temel bilgi edinildi.
+- Staj boyunca izlenecek geliştirme süreci ve çalışma düzeni anlaşıldı.
 
-Masaüstü paketindeki `autolabel-loop` klasöründe Python ortamı hazırlandı:
-- Python 3.11.9 tespit edildi 
-- Virtual environment (venv) oluşturuldu
-- venv aktivasyon başarılı oldu (terminal prefix: `(venv)` görüldü)
-- `requirements.txt` dosyasındaki 50+ paket kuruldu (PyTorch, Streamlit, YOLOv8, Transformers, OpenCV vb.)
+---
 
-**Kurulum Süresi:** 7 dakika, tamamı hatasız
+### Geliştirme Ortamının Kurulması
 
-### 3. Streamlit UI (AutoLabel Loop) Başlatılması
+Yerel geliştirme ortamı başarıyla hazırlandı.
 
-IDR web arayüzü lokal bilgisayarda çalıştırıldı:
-```bash
-streamlit run app.py 
+- Python geliştirme ortamı oluşturuldu.
+- Virtual Environment (venv) kuruldu ve aktif hale getirildi.
+- Proje bağımlılıkları eksiksiz şekilde yüklendi.
+- Gerekli kütüphanelerin sorunsuz çalıştığı doğrulandı.
+- Geliştirme ortamı staj süresince kullanılabilecek duruma getirildi.
+
+---
+
+### AutoLabel Loop (IDR) Sisteminin Çalıştırılması
+
+AutoLabel Loop (IDR) projesi lokal ortamda başarıyla ayağa kaldırıldı.
+
+- Streamlit tabanlı arayüz çalıştırıldı.
+- Proje dosya yapısı incelendi.
+- Sistemin temel bileşenleri ve modülleri gözden geçirildi.
+- Arayüzün çalıştığı ve geliştirme için hazır olduğu doğrulandı.
+
+---
+
+### Proje Yapısının İncelenmesi
+
+Her iki proje reposu genel olarak incelenerek geliştirme sürecinde kullanılacak yapı hakkında bilgi edinildi.
+
+- Klasör organizasyonu incelendi.
+- Ana modüllerin görevleri gözden geçirildi.
+- Sistemler arasındaki genel veri akışı ve çalışma mantığı anlaşıldı.
+- Staj süresince geliştirilecek bileşenlerin proje içerisindeki konumu belirlendi.
+
+---
+
+## Gün Sonunda Kazanımlar
+
+İlk gün sonunda;
+
+- Projenin amacı ve genel çalışma mantığı öğrenildi.
+- Geliştirme ortamı eksiksiz olarak hazırlandı.
+- Kullanılacak sistemler başarıyla çalıştırıldı.
+- Proje yapısı ve geliştirme süreci hakkında genel hakimiyet kazanıldı.
+- Sonraki günlerde gerçekleştirilecek geliştirme çalışmalarına başlanabilecek teknik altyapı hazır hale getirildi.
+
+---
+
+## Sonuç
+
+İlk günün sonunda proje ortamı başarıyla kurulmuş, gerekli sistemler çalışır duruma getirilmiş ve staj boyunca geliştirilecek yapının genel mimarisi öğrenilmiştir. Böylece sonraki günlerde gerçekleştirilecek uygulama geliştirme ve test çalışmalarına başlanabilecek hazır bir çalışma ortamı oluşturulmuştur.
