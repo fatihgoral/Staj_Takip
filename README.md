@@ -23,7 +23,7 @@ Staj paketinin tamamını inceledim:
 ### 2. Python Ortamı ve Virtual Environment Kurulumu
 
 Masaüstü paketindeki `autolabel-loop` klasöründe Python ortamı hazırlandı:
-- Python 3.11.9 tespit edildi ✅
+- Python 3.11.9 tespit edildi 
 - Virtual environment (venv) oluşturuldu
 - venv aktivasyon başarılı oldu (terminal prefix: `(venv)` görüldü)
 - `requirements.txt` dosyasındaki 50+ paket kuruldu (PyTorch, Streamlit, YOLOv8, Transformers, OpenCV vb.)
