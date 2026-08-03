@@ -1,76 +1,121 @@
 # Gün 01 - Günlük Çalışma Raporu
 
 **Tarih:** 3 Ağustos 2026  
-**Konu:** Sentetik Veri Benchmark'ı — Ortam Kurulumu ve Onboarding
+**Konu:** Sentetik Veri Benchmark'ı — Onboarding, Ortam Kurulumu ve Proje Analizi
 
 ---
 
-## Günün Özeti
+# Günün Özeti
 
-Stajın ilk gününde proje ortamının kurulumu tamamlandı ve geliştirilecek sistemlerin genel mimarisi incelendi. Çalışma sürecinde kullanılacak iki ana proje başarıyla çalıştırılarak geliştirme ortamı hazır hale getirildi. Ayrıca staj boyunca izlenecek iş planı, proje hedefleri ve çalışma metodolojisi detaylı şekilde incelenerek genel proje akışı hakkında bilgi edinildi.
-
----
-
-## Yapılan Çalışmalar
-
-### Proje Dokümantasyonunun İncelenmesi
-
-Staj kapsamında sağlanan başlangıç dokümanları okunarak proje yapısı analiz edildi.
-
-- Projenin genel amacı ve çalışma kapsamı öğrenildi.
-- İki farklı sistemin birlikte nasıl çalıştığı incelendi.
-- 30 iş günlük geliştirme planı ve haftalık hedefler değerlendirildi.
-- Sentetik veri üretim sürecinin genel yaklaşımı ve geliştirme aşamaları hakkında temel bilgi edinildi.
-- Staj boyunca izlenecek geliştirme süreci ve çalışma düzeni anlaşıldı.
+Stajın ilk gününde proje ortamının kurulumu tamamlandı ve geliştirme sürecinde kullanılacak sistemler incelendi. Sentetik veri üretimi ve model eğitim sürecinde kullanılan iki ana proje lokal geliştirme ortamında başarıyla çalıştırıldı. Bununla birlikte proje dokümantasyonları detaylı olarak okunarak sistem mimarisi, kullanılan teknolojiler, geliştirme yaklaşımı ve 30 günlük çalışma planı hakkında genel bilgi edinildi.
 
 ---
 
-### Geliştirme Ortamının Kurulması
+# Yapılan Çalışmalar
 
-Yerel geliştirme ortamı başarıyla hazırlandı.
+## 1. Proje Dokümantasyonunun İncelenmesi
+
+İlk olarak staj kapsamında paylaşılan başlangıç dokümanları detaylı şekilde incelendi.
+
+Bu süreçte;
+
+- Projenin amacı ve çözmeyi hedeflediği problem analiz edildi.
+- İki ana projenin görevleri ve birbirleriyle olan ilişkisi incelendi.
+- Genel sistem mimarisi ve modüller arasındaki çalışma akışı gözden geçirildi.
+- Geliştirme sürecinde takip edilecek metodoloji öğrenildi.
+- 30 iş günlük yol haritası ve haftalık hedefler incelendi.
+- Günlük çalışma düzeni, raporlama süreci ve geliştirme akışı hakkında bilgi edinildi.
+- Sentetik veri üretim süreçlerinin genel yaklaşımı ve farklı üretim seviyeleri incelendi.
+- Eğitim, veri hazırlama ve değerlendirme süreçlerinin genel yapısı gözden geçirildi.
+
+Dokümantasyon incelemesi sayesinde proje üzerinde geliştirilecek bileşenlerin genel konumu ve çalışma mantığı hakkında ön hazırlık tamamlandı.
+
+---
+
+## 2. Geliştirme Ortamının Kurulması
+
+Yerel geliştirme ortamı sıfırdan hazırlanarak proje geliştirmeye uygun hale getirildi.
+
+Bu kapsamda;
 
 - Python geliştirme ortamı oluşturuldu.
 - Virtual Environment (venv) kuruldu ve aktif hale getirildi.
-- Proje bağımlılıkları eksiksiz şekilde yüklendi.
-- Gerekli kütüphanelerin sorunsuz çalıştığı doğrulandı.
-- Geliştirme ortamı staj süresince kullanılabilecek duruma getirildi.
+- Proje bağımlılıkları `requirements.txt` üzerinden yüklendi.
+- Gerekli Python paketlerinin sorunsuz şekilde kurulduğu doğrulandı.
+- Kullanılan temel framework ve kütüphanelerin çalışabilirliği test edildi.
+- Proje dizin yapısı incelenerek geliştirme ortamı organize edildi.
+
+Kurulum süreci sorunsuz tamamlandı ve proje geliştirmeye hazır hale getirildi.
 
 ---
 
-### AutoLabel Loop (IDR) Sisteminin Çalıştırılması
+## 3. AutoLabel Loop (IDR) Projesinin Çalıştırılması
 
-AutoLabel Loop (IDR) projesi lokal ortamda başarıyla ayağa kaldırıldı.
+Kurulum tamamlandıktan sonra AutoLabel Loop projesi lokal ortamda çalıştırıldı.
 
-- Streamlit tabanlı arayüz çalıştırıldı.
-- Proje dosya yapısı incelendi.
-- Sistemin temel bileşenleri ve modülleri gözden geçirildi.
-- Arayüzün çalıştığı ve geliştirme için hazır olduğu doğrulandı.
+Bu süreçte;
 
----
+- Streamlit tabanlı web arayüzü başarıyla ayağa kaldırıldı.
+- Uygulamanın temel sayfaları ve modülleri incelendi.
+- Proje içerisindeki klasör yapısı gözden geçirildi.
+- Eğitim, veri yönetimi ve proje akışına ait temel bileşenler tanındı.
+- Sistemin lokal ortamda sorunsuz şekilde çalıştığı doğrulandı.
 
-### Proje Yapısının İncelenmesi
-
-Her iki proje reposu genel olarak incelenerek geliştirme sürecinde kullanılacak yapı hakkında bilgi edinildi.
-
-- Klasör organizasyonu incelendi.
-- Ana modüllerin görevleri gözden geçirildi.
-- Sistemler arasındaki genel veri akışı ve çalışma mantığı anlaşıldı.
-- Staj süresince geliştirilecek bileşenlerin proje içerisindeki konumu belirlendi.
+Böylece geliştirme sürecinde kullanılacak ana uygulama çalışır duruma getirildi.
 
 ---
 
-## Gün Sonunda Kazanımlar
+## 4. Kullanılan Teknolojilerin İncelenmesi
+
+İlk gün proje içerisinde kullanılan temel teknolojiler ve yazılım bileşenleri genel hatlarıyla incelendi.
+
+İnceleme kapsamında;
+
+- Python tabanlı proje yapısı,
+- Streamlit arayüzü,
+- PyTorch tabanlı derin öğrenme altyapısı,
+- Ultralytics YOLO tabanlı model yapısı,
+- OpenCV ile görüntü işleme bileşenleri,
+- Hugging Face ekosisteminde kullanılan bazı model bileşenleri,
+- Git tabanlı proje yönetimi,
+- Virtual Environment yapısı
+
+genel seviyede incelenerek proje içerisindeki görevleri hakkında bilgi edinildi.
+
+---
+
+## 5. Proje Mimarisi ve Klasör Yapısının İncelenmesi
+
+Projelerin dosya organizasyonu ve yazılım mimarisi genel olarak analiz edildi.
+
+Bu kapsamda;
+
+- Ana klasör yapıları incelendi.
+- Modüllerin görev dağılımı gözden geçirildi.
+- Veri hazırlama, eğitim ve değerlendirme süreçlerinin genel akışı öğrenildi.
+- Kullanılan yardımcı araçlar ve servisler tanındı.
+- İki proje arasındaki veri alışverişi ve entegrasyon noktaları genel seviyede incelendi.
+- Geliştirme sürecinde çalışılacak modüller belirlendi.
+
+Bu inceleme sayesinde ilerleyen günlerde geliştirilecek bileşenlerin proje içerisindeki konumu daha net anlaşılmış oldu.
+
+---
+
+# Gün Sonunda Öğrenilenler
 
 İlk gün sonunda;
 
-- Projenin amacı ve genel çalışma mantığı öğrenildi.
-- Geliştirme ortamı eksiksiz olarak hazırlandı.
-- Kullanılacak sistemler başarıyla çalıştırıldı.
-- Proje yapısı ve geliştirme süreci hakkında genel hakimiyet kazanıldı.
-- Sonraki günlerde gerçekleştirilecek geliştirme çalışmalarına başlanabilecek teknik altyapı hazır hale getirildi.
+- Projenin genel amacı ve kapsamı öğrenildi.
+- Kullanılacak yazılım mimarisi hakkında genel bilgi edinildi.
+- Projede kullanılan temel teknolojiler tanındı.
+- Yerel geliştirme ortamı başarıyla hazırlandı.
+- Ana proje lokal ortamda sorunsuz şekilde çalıştırıldı.
+- Proje klasör yapısı ve temel modüller incelendi.
+- Geliştirme sürecinde izlenecek çalışma planı öğrenildi.
+- Sonraki günlerde gerçekleştirilecek geliştirme çalışmalarına başlanabilecek teknik hazırlık tamamlandı.
 
 ---
 
-## Sonuç
+# Sonuç
 
-İlk günün sonunda proje ortamı başarıyla kurulmuş, gerekli sistemler çalışır duruma getirilmiş ve staj boyunca geliştirilecek yapının genel mimarisi öğrenilmiştir. Böylece sonraki günlerde gerçekleştirilecek uygulama geliştirme ve test çalışmalarına başlanabilecek hazır bir çalışma ortamı oluşturulmuştur.
+İlk günün sonunda geliştirme ortamı eksiksiz şekilde hazırlanmış, kullanılacak sistemler başarıyla çalıştırılmış ve proje mimarisi genel hatlarıyla analiz edilmiştir. Kullanılan teknolojiler, temel yazılım bileşenleri ve geliştirme süreci hakkında yeterli seviyede bilgi edinilmiş olup, sonraki günlerde gerçekleştirilecek uygulama geliştirme ve test çalışmalarına başlanabilecek hazır bir çalışma ortamı oluşturulmuştur.
