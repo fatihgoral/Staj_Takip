@@ -4,3 +4,4 @@ Bu depo, staj sürecinde gerçekleştirilen günlük çalışmaları, öğrenile
 
 Her gün için ayrı bir klasör oluşturulmuş olup, ilgili günün çalışmaları kendi `README.md` dosyasında detaylı olarak açıklanmaktadır.
 
+
