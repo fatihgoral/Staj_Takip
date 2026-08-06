@@ -51,7 +51,6 @@ Veri üretim hattının iki temel bileşenini (nesne/görsel üretimi ve video h
 
 - **Yedekleme ve kayıt alışkanlığı:** Üretilen çıktıları hem yerelde hem bulutta yedeklemenin, ileride bir adıma geri dönme ihtiyacı doğduğunda (ör. bir sonraki aşamada girdi olarak kullanılacaksa) zaman kaybını önlediğini bir kez daha deneyimledik.
 
-
 ## ➡️ Sonraki Adım
 Bugün doğrulanan iki modülün çıktıları, bir sonraki aşamada (birleştirme/entegrasyon modülü) test amaçlı girdi olarak kullanılacak.
 
