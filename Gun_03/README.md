@@ -1,4 +1,4 @@
-# Gün 3 — Genel İlerleme Notu
+# Gün 3 — Günlük Çalışma Raporu
 
 ## 🎯 Amaç
 Veri üretim hattının iki temel bileşenini (nesne/görsel üretimi ve video hazırlama) küçük ölçekli bir test koşusuyla uçtan uca doğrulamak; her adımın çıktısını hem sayısal hem görsel olarak kontrol edip bir sonraki aşamaya güvenle geçebilmek.
