@@ -1,6 +1,7 @@
 # Gün 4 — Günlük Çalışma Raporu
 
 **Tarih:** 6 Ağustos 2026 (Perşembe)
+
 **Hafta:** Hafta 1 — Onboarding
 **Konu:** Veri üretim hattının son bileşeninin (birleştirme + otomatik etiketleme) test modunda çalıştırılması
 
