@@ -56,3 +56,5 @@ Veri üretim hattının üçüncü ve son bileşenini — üretilen nesnelerin v
 Bugün doğrulanan modülün çıktılarını, bir sonraki aşamada (verinin eğitim sürecine hazırlanması) test amaçlı girdi olarak kullanmayı planlıyorum. Buradaki amaç mükemmel bir sonuç almak değil, iki aşamanın uçtan uca birbirine bağlı çalıştığını küçük ölçekli bir denemeyle doğrulamak ve varsa entegrasyon noktasındaki sorunları erken aşamada, düşük maliyetle yakalamak olacak.
 
 ---
+
+
