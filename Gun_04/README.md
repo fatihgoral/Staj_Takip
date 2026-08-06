@@ -8,56 +8,51 @@
 
 ## 🎯 Amaç
 
-Veri üretim hattının üçüncü ve son bileşenini (üretilen nesnelerin video sahnelerine yerleştirilmesi ve otomatik etiketlenmesi) küçük ölçekli bir test koşusuyla uçtan uca doğrulamak; önceki iki günde hazırlanan girdilerin bu aşamada doğru şekilde bir araya geldiğini hem sayısal hem görsel olarak teyit edip bir sonraki aşamaya güvenle geçebilmek.
+Veri üretim hattının üçüncü ve son bileşenini — üretilen nesnelerin video sahnelerine yerleştirilmesi ve otomatik olarak etiketlenmesi işini üstlenen modülü — küçük ölçekli bir test koşusuyla uçtan uca doğrulamak; önceki iki günde hazırlanan girdilerin bu aşamada doğru şekilde bir araya geldiğini hem sayısal hem görsel olarak teyit edip bir sonraki aşamaya güvenle geçebilmekti. Bugünkü çalışma, önceki günlerde ayrı ayrı hazırlanan parçaların ilk kez bir araya geldiği ve sürecin "uçtan uca" görülebildiği ilk gündü; bu yüzden hem teknik hem de süreç açısından öğretici bir gündü.
 
 ---
 
 ## 🛠 Yapılan Adımlar
 
 1. **Ortam hazırlığı**
-   * Önceki günlerde üretilmiş girdiler (nesne görselleri, video klipleri, yardımcı model) çalışma ortamına aktarıldı.
-   * Aktarılan dosyaların eksiksiz ve doğru konumda olduğu otomatik kontrollerle teyit edildi.
+   * Güne, önceki günlerde üretilmiş girdilerin (nesne görselleri, video klipleri, yardımcı model dosyaları) çalışma ortamına doğru şekilde aktarılmasıyla başladım.
+   * Aktarım sonrasında tüm dosyaların eksiksiz ve doğru konumda olduğunu otomatik kontrollerle teyit ettim; bu adımı atlamadan önce ilerlemenin ileride daha büyük sorunlara yol açabileceğini bildiğim için özellikle önem verdim.
 
 2. **Birleştirme ve etiketleme modülü**
-   * Modül test modunda çalıştırıldı.
-   * Çalıştırma öncesi, sahnedeki temel bir referans unsurunun (yerleştirme için kullanılan sabit bir sahne elemanı) doğru tanınıp tanınmadığı örnek bir kare üzerinden görsel olarak doğrulandı — sonuç olumluydu.
-   * Nesnelerin sahneye yerleştirilme süreci baştan sona izlendi; her adımda ara çıktılar sırayla kontrol edildi.
-   * Üretim sonunda hedeflenen sayıda çıktı elde edildi; tamamı kalite kriterlerini geçti, reddedilen örnek olmadı.
+   * Modülü test (küçük ölçekli, hızlı geri bildirim almaya yönelik) modda çalıştırdım.
+   * Çalıştırmadan önce, sahnedeki temel bir referans unsurunun (nesnelerin yerleştirilmesi için kullanılan sabit bir sahne elemanı) doğru şekilde tanınıp tanınmadığını örnek bir kare üzerinden görsel olarak doğruladım — sonuç olumluydu ve bu, devam eden adımlar için güven verici bir başlangıç oldu.
+   * Nesnelerin sahneye yerleştirilme sürecini baştan sona takip ettim; her ara adımda üretilen çıktıları sırayla kontrol ederek sürecin beklenen şekilde ilerlediğinden emin oldum.
+   * Üretim sonunda hedeflenen sayıda çıktı elde edildi; üretilen tüm örnekler kalite kriterlerini geçti, reddedilen herhangi bir örnek olmadı. Bu, hem girdilerin hem de sürecin bu aşamaya kadar sağlıklı ilerlediğinin bir göstergesiydi.
 
 3. **Doğrulama ve kalite kontrolü**
-   * Üretilen her çıktı, yalnızca "hedefe ulaşıldı mı" sorusuyla değil, içerik bazında (etiketin nesneyle örtüşüp örtüşmediği, nesnenin sahne boyunca tutarlı görünüp görünmediği) görsel olarak da tek tek incelendi.
-   * Bu inceleme sırasında bir çıktıda ilk bakışta sorunlu görünen bir durumla karşılaşıldı (aşağıda "Karşılaşılan Sorunlar" bölümünde detaylandırılmıştır).
+   * Üretilen her çıktıyı yalnızca "hedeflenen sayıya ulaşıldı mı" sorusuyla değil, içerik bazında da (etiketin nesneyle doğru örtüşüp örtüşmediği, nesnenin sahne boyunca tutarlı biçimde görünüp görünmediği) tek tek görsel olarak inceledim. Sayısal bir özetin her zaman tüm hikayeyi anlatmadığını bildiğim için bu adıma özellikle vakit ayırdım.
+   * Bu inceleme sırasında bir çıktıda ilk bakışta sorunlu görünen bir durumla karşılaştım; bu durumu nasıl ele aldığımı aşağıdaki "Karşılaşılan Sorunlar" bölümünde detaylandırdım.
 
 4. **Yedekleme ve kayıt altına alma**
-   * Üretilen tüm çıktılar hem bulut depolama hem yerel ortamda yedeklendi.
-   * Süreç adımları ve elde edilen sonuçlar ilerleyen günlerde referans alınabilecek şekilde not edildi.
+   * Gün sonunda üretilen tüm çıktıları hem bulut depolama hem de yerel ortamda yedekledim.
+   * Süreç boyunca attığım adımları ve elde ettiğim sonuçları, ilerleyen günlerde referans alınabilecek şekilde düzenli olarak not ettim; böylece benzer bir durumla tekrar karşılaşırsam bugünkü deneyimden hızlıca faydalanabileceğim.
 
 ---
 
 ## 🧩 Karşılaşılan Sorunlar ve Çözümler
 
-* **Dosya yapısı uyumsuzluğu:** Önceki gün hazırlanan bir veri paketinin farklı bir ortama taşınması sırasında dosya/klasör yapısında beklenmeyen bir uyumsuzluk fark edildi. Kök neden incelenip kısa bir düzeltme uygulanarak dosya yapısı doğru hale getirildi, süreç sorunsuz devam etti.
-* **Kontrol çıktısında yanıltıcı görünüm:** Görsel inceleme sırasında bir çıktıda nesnenin "eksik/kayıp" gibi göründüğü bir an oldu. Paniklemeden önce durumu sistematik olarak araştırdım: gerçek üretim verisini doğrudan incelediğimde ve ilgili sayısal kayıtları kontrol ettiğimde, sorunun asıl veride değil, yalnızca kontrol amaçlı kullanılan görselleştirme katmanında olduğunu tespit ettim. Asıl veri sağlam çıktı; bu bulgu, kontrol sürecinin ileride iyileştirilmesi için not edildi.
+* **Dosya yapısı uyumsuzluğu:** Önceki gün hazırladığım bir veri paketini farklı bir ortama taşırken, dosya/klasör yapısında beklenmediğim bir uyumsuzlukla karşılaştım; bazı dosyalar beklenen konumda görünmüyordu. Sorunu ele almadan önce panik yapmak yerine önce kaynağını anlamaya çalıştım ve kök nedenin taşıma sırasında oluşan bir yapısal fark olduğunu tespit ettim. Bu tespitin ardından kısa bir düzeltme uygulayarak dosya yapısını doğru hale getirdim, tüm dosyaları tekrar doğruladım ve süreç sorunsuz şekilde devam etti.
+* **Kontrol çıktısında yanıltıcı görünüm:** Görsel inceleme sırasında bir çıktıda nesnenin "eksik/kayıp" gibi göründüğü bir an yaşadım; ilk izlenim biraz endişe vericiydi çünkü sayısal özet bu çıktının yüksek kalitede olduğunu gösteriyordu. Paniklemeden önce durumu sistematik biçimde araştırmaya karar verdim: gerçek üretim verisini doğrudan inceledim, ardından ilgili sayısal kayıtları (nesnenin sahne içindeki konum ve boyut bilgileri) tek tek kontrol ettim. Bu inceleme sonucunda sorunun asıl veride değil, yalnızca kontrol amaçlı kullanılan görselleştirme katmanında olduğunu tespit ettim; asıl veri gerçekte tamamen sağlamdı. Bu bulguyu, kontrol sürecinin ileride daha net hale getirilmesi gerektiğini hatırlatan bir not olarak kaydettim.
 
 ---
 
 ## 📚 Öğrenilenler
 
-* **"Sorunlu görünen" ile "gerçekten sorunlu" olan farklı şeyler:** İlk bakışta hata gibi görünen bir durumun, aslında sadece kontrol/görselleştirme katmanından kaynaklanabileceğini deneyimledik. Böyle anlarda hemen "veri bozuk" sonucuna varmak yerine, asıl kaynağa (ham çıktı, ham sayısal kayıt) inip kök nedeni doğru teşhis etmenin ne kadar kritik olduğunu bir kez daha gördüm.
-* **Katmanlı doğrulamanın değeri:** Bir sürecin doğru çalıştığından emin olmak için tek bir kontrol yöntemine güvenmemek gerektiğini; farklı doğrulama yöntemlerinin (sayısal özet + görsel kontrol) birbirini tamamladığını deneyimledik.
-* **Dayanıklı süreç tasarımının pratikteki karşılığı:** Bir kesinti yaşandığında sıfırdan başlamak yerine kaldığı yerden devam edebilen bir sistemin, zaman ve kaynak açısından ne kadar değerli olduğunu bugün somut olarak gördüm.
-* **Ortamlar arası taşımada dikkat:** Bir veri/dosya kümesini farklı bir ortama taşırken küçük yapısal farklılıkların beklenmedik sorunlara yol açabileceğini; bu tür taşımalardan sonra doğrulama adımını atlamamak gerektiğini öğrendim.
-* **Sakin ve sistematik teşhis alışkanlığı:** Beklenmedik bir durumla karşılaşıldığında hemen düzeltmeye girişmek yerine önce "bu gerçekten nerede kaynaklanıyor" sorusunu sormanın, zaman kaybını ve yanlış müdahaleyi önlediğini bir kez daha deneyimledik.
+* **"Sorunlu görünen" ile "gerçekten sorunlu olan" farklı şeyler olabiliyor:** İlk bakışta hata gibi görünen bir durumun, aslında yalnızca kontrol/görselleştirme katmanından kaynaklanabileceğini bugün somut olarak deneyimledim. Böyle anlarda hemen "veri bozuk" sonucuna varmak yerine, asıl kaynağa — ham çıktıya, ham sayısal kayda — inip kök nedeni doğru teşhis etmenin ne kadar kritik olduğunu bir kez daha gördüm. Bu yaklaşımı bundan sonra da bilinçli olarak uygulamayı planlıyorum.
+* **Katmanlı doğrulamanın değeri:** Bir sürecin doğru çalıştığından tam anlamıyla emin olabilmek için tek bir kontrol yöntemine güvenmemek gerektiğini öğrendim. Sayısal özetler hızlı bir genel görünüm sunsa da, görsel/içerik bazlı kontrol farklı türde sorunları ortaya çıkarabiliyor; bu iki yöntemin birbirini tamamladığını bugün net biçimde gördüm.
+* **Dayanıklı süreç tasarımının pratikteki karşılığı:** Bir kesinti yaşandığında sıfırdan başlamak yerine kaldığı yerden devam edebilen bir sistemin, zaman ve kaynak açısından ne kadar değerli olduğunu bugün somut olarak deneyimledim. Bu tür bir tasarımın önceden düşünülmüş olması, kesinti anında stresimi önemli ölçüde azalttı.
+* **Ortamlar arası taşımada dikkat gerektiren detaylar:** Bir veri/dosya kümesini farklı bir ortama taşırken, görünürde küçük olan yapısal farklılıkların beklenmedik sorunlara yol açabileceğini öğrendim. Bu tür taşımalardan sonra doğrulama adımını asla atlamamam gerektiğini bir kez daha kendime hatırlattım.
+* **Sakin ve sistematik teşhis alışkanlığı:** Beklenmedik bir durumla karşılaştığımda hemen düzeltmeye girişmek yerine önce "bu gerçekten nerede kaynaklanıyor" sorusunu sormanın, hem zaman kaybını hem de yanlış müdahale riskini önlediğini bir kez daha deneyimledim. Bu, bugünün belki de en değerli, teknik olmayan öğrenimiydi.
 
 ---
 
 ## ➡️ Sonraki Adım
 
-Bugün doğrulanan modülün çıktıları, bir sonraki aşamada (verinin eğitim sürecine hazırlanması) test amaçlı girdi olarak kullanılacak; amaç iki aşamanın uçtan uca birbirine bağlı çalıştığını küçük ölçekli bir denemeyle doğrulamak.
+Bugün doğrulanan modülün çıktılarını, bir sonraki aşamada (verinin eğitim sürecine hazırlanması) test amaçlı girdi olarak kullanmayı planlıyorum. Buradaki amaç mükemmel bir sonuç almak değil, iki aşamanın uçtan uca birbirine bağlı çalıştığını küçük ölçekli bir denemeyle doğrulamak ve varsa entegrasyon noktasındaki sorunları erken aşamada, düşük maliyetle yakalamak olacak.
 
 ---
-
-## 🚧 Blokaj Durumu
-
-Gün içinde yaşanan teknik kısıtlama çözüldü. **Aktif blokaj bulunmamaktadır.**
-
