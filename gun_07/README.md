@@ -1,6 +1,6 @@
 # Gün 7 — Çalışma Özeti
 
-**Tarih:** 10–11 Ağustos 2026
+**Tarih:** 10 Ağustos 2026
 
 **Hedef:** Modelin gerçek dünya koşullarındaki başarımını ölçmek amacıyla, eğitimde kullanılmayacak bağımsız bir doğrulama setinin oluşturulması için gerekli çalışmaları yürütmek.
 
