@@ -1,4 +1,4 @@
-# Gün 5 — İlk ölçüm: temel model sonucu (baseline) elde edildi
+# Gün 10 — İlk ölçüm: temel model sonucu (baseline) elde edildi
 
 **Tarih:** 14 Ağustos 2026  
 **Hedef:** Hazırlanan veri setiyle ilk model eğitimini gerçekleştirmek, projeye özel bir değerlendirme aracı geliştirmek ve tek bir eğitime güvenmeden birden fazla tekrarla ilk referans (baseline) sonucunu elde etmek — haftanın kapanışı ve Demo #2 için.
