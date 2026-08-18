@@ -1,4 +1,4 @@
-# Gün 3 — Üretim hattının tamamlanması ve veri çıktısının doğrulanması
+# Gün 8 — Üretim hattının tamamlanması ve veri çıktısının doğrulanması
 
 **Tarih:** 12 Ağustos 2026  
 **Hedef:** Bir önceki gün alınan karar doğrultusunda (video-bazlı ayrım, sentetik doğrulama seti) üretim sürecini tamamlamak ve split kararını veriyle doğrulayıp kesinleştirmek.
