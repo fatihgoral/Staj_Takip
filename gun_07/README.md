@@ -1,4 +1,4 @@
-# Gün 1 — Çalışma Özeti
+# Gün 7 — Çalışma Özeti
 
 **Tarih:** 10–11 Ağustos 2026
 
