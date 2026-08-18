@@ -1,4 +1,4 @@
-# Gün 4 — Veri setinin kurulması ve dönüştürme aracının yeniden yazılması
+# Gün 9 — Veri setinin kurulması ve dönüştürme aracının yeniden yazılması
 
 **Tarih:** 13 Ağustos 2026  
 **Hedef:** Ham çıktıyı model eğitimine hazır bir veri setine dönüştürmek ve split kararına uygun şekilde veri setini oluşturmak.
