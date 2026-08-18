@@ -1,6 +1,8 @@
 
 # Gün 6 — Genel Akış Özeti
 
+**Tarih:** 11 Ağustos 2026
+
 ## Hedef
 Anomali tespiti için gerçek doğrulama veri setinin ilk adımını atmak: bir etiketleme
 projesi açmak, ham görselleri havuza almak, sınıf tanımlarını hazırlamak, otomatik
