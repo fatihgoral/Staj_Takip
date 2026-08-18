@@ -37,4 +37,4 @@ Bu iki çıktı, sonraki günün çalışmasının doğrudan girdisini oluşturd
 ## Sıradaki Adımlar
 - [ ] Ham üretim çıktısını model eğitimine hazır formata dönüştürmek.
 - [ ] Dönüştürme aracının yeniden yazılması ve test edilmesi.
-- [ ] Sızıntı (leakage) kontrolünün gerçekleştirilmesi.
+- [ ] leakage kontrolünün gerçekleştirilmesi.
