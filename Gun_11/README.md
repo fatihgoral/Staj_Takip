@@ -1,3 +1,5 @@
+# Gün 11 — Ucuz kontrol kolunun hazırlanması ve tur maliyetinin çıkarılması
+
 ## 13 Ağustos 2026
 
 **Hedef:** Ham çıktıyı model eğitimine hazır bir veri setine dönüştürmek ve split
